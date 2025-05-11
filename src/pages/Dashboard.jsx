@@ -14,6 +14,8 @@ function Dashboard() {
   useEffect(() => {
     api.get("/dashboard/summary").then((res) => setData(res.data));
     getVaccinationProgress().then(res => {
+      console.log("ddata check !!!!!!!", res);
+      
       setProgress(res.data.map(item => ({
         ...item,
         dateLabel: new Date(item.date).toLocaleDateString(),

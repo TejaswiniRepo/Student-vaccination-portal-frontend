@@ -21,9 +21,9 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow w-96">
-        <h1 className="text-xl font-bold mb-4 text-center">School Vaccination Portal</h1>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100" style={{ backgroundImage: "url('src/image/svp3.JPG')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <form onSubmit={handleSubmit} className="bg-grey p-6 rounded shadow w-96">
+        <h1 className="text-xl text-white font-bold mb-4 text-center">School Vaccination Portal</h1>
         <input className="input w-full mb-3" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
         <input className="input w-full mb-4" placeholder="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         <button className="bg-blue-600 text-white w-full py-2 rounded">Login</button>
